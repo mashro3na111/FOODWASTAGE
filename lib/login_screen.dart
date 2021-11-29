@@ -54,6 +54,7 @@ class LoginScreen extends StatelessWidget {
                   keyboardType: TextInputType.visiblePassword,
                   obscureText: true,
                   decoration: const InputDecoration(
+                    prefixIcon: Icon(Icons.lock) ,
                     labelText: "Password",
                     border: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.teal)),
