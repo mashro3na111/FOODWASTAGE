@@ -8,7 +8,7 @@ class RegisterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 239, 121, 73),
+        backgroundColor: const Color.fromARGB(255, 239, 121, 73),
       ),
       body: Padding(
         padding: const EdgeInsets.all(15.0),
@@ -17,108 +17,98 @@ class RegisterScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Signup",
                 style: TextStyle(
                   fontSize: 40,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 55,
               ),
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: "First Name",
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: "Last Name",
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               TextFormField(
                 keyboardType: TextInputType.phone,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: "Phone Number",
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: "Email",
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               TextFormField(
                 keyboardType: TextInputType.visiblePassword,
                 obscureText: true,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: "Password",
-                  border: new OutlineInputBorder(
-                      borderSide: new BorderSide(color: Colors.teal)
-                  ),
-                  suffixIcon: Icon(
-                    Icons.remove_red_eye
-                  ),
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.teal)),
+                  suffixIcon: Icon(Icons.remove_red_eye),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Container(
                 width: double.infinity,
-                color: Color.fromARGB(255, 239, 121, 73),
+                color: const Color.fromARGB(255, 239, 121, 73),
                 height: 50,
-                child: MaterialButton(onPressed: () {},
-                child: Text(
-                  "Signup",
-                  style: TextStyle(
-                    color: Colors.white
+                child: MaterialButton(
+                  onPressed: () {},
+                  child: const Text(
+                    "Signup",
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
-
-
-                ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "Already have an account?",
                   ),
-                  TextButton(onPressed: () {},
-                    child: Text(
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text(
                       "Login",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 239, 121, 73)
-                      ),
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 239, 121, 73)),
                     ),
-
                   ),
                 ],
               )
-
-
-
             ],
           ),
         ),
